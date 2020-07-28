@@ -54,9 +54,8 @@ const finalStudentToMark = getMarks(students, marks);
 
 const pairGetsMark = (twoStudents) => {
   const marksToPairs = [];
-  const randomMark = Math.floor(Math.random() * 5 + 1);
-  for (i = 0; i < twoStudents.length; i++) {
-    marksToPairs.push(" " + twoStudents[i] + " - " + randomMark);
+  for (let i = 0; i < twoStudents.length; i++) {
+  marksToPairs.push(" " + twoStudents[i] + " - " + (Math.floor(Math.random() * 5 + 1)));
   }
   return marksToPairs;
 }
